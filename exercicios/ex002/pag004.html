@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <style>
+        body {
+            background-color: rgb(47, 93, 192);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudo em DOM</h1>
+    <p>escrevendo algo aqui </p>
+    <p>aprendendo a usar o DOM em JS.</p>
+    <div id="msg">clique em mim</div> <br>
+    <script>
+        p1 = document.getElementsByTagName('p')[0]
+        document.write(`Está escrito assim: "${p1.innerText}" `)
+        p1.style.color = 'yellow'
+        document.body.style.background = 'black'
+        d = document.getElementById('msg')
+        d.style.background = 'green' 
+        d.innerText = 'Temos aqui um exemplo de "innerText"'
+    </script>
+</html>
